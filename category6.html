@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family:arial,Helvetica,sans-serif;
+            padding: 0;
+            background-color:#E3DFDE;
+            margin-bottom:100px;
+        }
+        .header {
+            background-color:#E3DFDE;
+            color: #070707;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #BFAA9D;
+        }
+        .nav a {
+            position: relative;
+            display: flex;
+            color: black;
+            padding: 20px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav a:hover {
+            background-color: #AC9362;
+            color: white;
+            transform: scale(1.1);
+        }
+        .main {
+            padding: 20px;
+            text-align: center; 
+        }
+    
+    
+        .gallery {
+            perspective: 1000px;
+        }
+    
+        .gallery-container {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotate 20s infinite linear;
+            gap: 10px;
+            padding:30px;
+        }
+    
+        .gallery-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            
+        }
+    
+        .gallery-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        .thumbnail-gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            row-gap: 30px;
+            column-gap: 5px;
+            margin-top: 100px;
+            margin: 100px 0px 100px 100px;
+        }
+    
+        .thumbnail {
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            width: 200px;
+            height: 205px;
+            position: relative;
+        }
+    
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    
+        .thumbnail:hover {
+            transform: scale(1.1);
+        }
+    
+        .description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            font-family: arial,Helvetica,sans-serif;
+            font-size: 15px;
+            padding: 1px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+    
+        .thumbnail:hover .description {
+            opacity: 1;
+        }
+        .available{
+            margin: 0px 0px 0px 30px;
+            }
+    
+        .available h4{
+            color: #412A1A;
+            letter-spacing: 4px;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="header">
+                <img src="flogooooooo-removebg-preview.png" height="100px" width="100px">
+            </div>
+            <div class="nav">
+                <a href="homeeeeeeee.html">Home</a>
+                <a href="finalna.html">Product</a>
+                <a href="category.html">Category</a>
+                <a href="">About</a>
+            </div>
+            <div class="available">
+                <h3><center>Dining Table</center></h3>
+       <center> <div class="thumbnail-gallery">
+        <div class="thumbnail"><a href="item16.html"><img src="462549879_1227509225237478_3432376187602030139_n.png" alt="thumbnail 16"></a>
+            <div class="description">Foldable Dining Set</div>
+        </div>
+        <div class="thumbnail"><a href="item17.html"><img src="462554892_577399241479548_4294569037644428633_n.png" alt="thumbnail 17"></a>
+            <div class="description">4 Seater Dining Set</div>
+        </div>
+        <div class="thumbnail"><a href="item18.html"><img src="462560821_1060992565518288_7243727445515167080_n.png" alt="thumbnail 18"></a>
+            <div class="description">4 Seater Dining Room Set</div>
+        </div>
+        <div class="thumbnail"><a href="item19.html"><img src="462637085_417667964494508_563200100815071091_n.png" alt="thumbnail 19"></a>
+            <div class="description">6 Seater Dining Table</div>
+        </div>
+        <div class="thumbnail"><a href="item20.html"><img src="20.png" alt="thumbnail 20"></a>
+            <div class="description">Square Dining Set</div>
+        </div>
+    </center>
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family:arial,Helvetica,sans-serif;
+            padding: 0;
+            background-color:#E3DFDE;
+            margin-bottom:100px;
+        }
+        .header {
+            background-color:#E3DFDE;
+            color: #070707;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #BFAA9D;
+        }
+        .nav a {
+            position: relative;
+            display: flex;
+            color: black;
+            padding: 20px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav a:hover {
+            background-color: #AC9362;
+            color: white;
+	        transform: scale(1.1);
+        }
+        .main {
+            padding: 20px;
+            text-align: center; 
+        }
+        .dropdown-btn {
+    background-color: #BFAA9D;
+    color: black;
+    padding: 20px 20px;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.dropdown-btn:hover {
+    background-color: #AC9362;
+}
+
+
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    background-color: #BFAA9D;
+    min-width: 100px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px 28px;
+    text-decoration: none;
+    display: block;
+    font-size: 11.5px;
+    white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+    background-color: #AC9362;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+        .gallery {
+            perspective: 1000px;
+        }
+
+        .gallery-container {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotate 20s infinite linear;
+            gap: 10px;
+            padding:30px;
+        }
+
+        .gallery-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            
+        }
+
+        .gallery-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-image:nth-child(1) {
+            transform: rotateY(0deg);
+        }
+
+        .gallery-image:nth-child(2) {
+            transform: rotateY(90deg);
+        }
+
+        .gallery-image:nth-child(3) {
+            transform: rotateY(180deg);
+        }
+
+        .gallery-image:nth-child(4) {
+            transform: rotateY(270deg);
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotateY(0deg);
+            }
+
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        .thumbnail-gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            row-gap: 30px;
+            column-gap: 5px;
+            margin-top: 100px;
+            margin: 100px 0px 100px 100px;
+        }
+
+        .thumbnail {
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            width: 200px;
+            height: 205px;
+            position: relative;
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .thumbnail:hover {
+            transform: scale(1.1);
+        }
+
+        .description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            font-family: arial,Helvetica,sans-serif;
+            font-size: 15px;
+            padding: 1px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .thumbnail:hover .description {
+            opacity: 1;
+        }
+        .available{
+            margin: 0px 0px 0px 30px;
+            }
+
+        .available h4{
+            color: #412A1A;
+            letter-spacing: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="flogooooooo-removebg-preview.png" height="100px" width="100px">
+        </div>
+        <div class="nav">
+            <a href="homeeeeeeee.html">Home</a>
+            <a href="finalna.html">Product</a>
+            <div class="dropdown">
+               <button class="dropdown-btn">Category</button>
+               <div class="dropdown-content">
+                   <a href="category1.html">Bar Stool/Chair</a>
+                   <a href="category2.html">Living Room Chair</a>
+                   <a href="category3.html">Dining Table</a>
+                   <a href="category4.html">Office Table</a>
+                   <a href="category5.html">TV Rack </a>
+                   <a href="category6.html">Dining Table </a>
+                   <a href="category7.html">Kitchen Cabinet</a>
+                   <a href="category8.html">Wardrobe</a>
+                   <a href="category9.html">Queen Size Bed</a>
+                   <a href="category10.html">Double Deck</a>
+               </div>
+               </div>
+            <a href="ab.html">About</a>
+            </div>
+     <div class="gallery">
+        <Center>
+        <div class="gallery-container">
+            <div class="gallery-image"><img src="462547237_532481459566379_1573078386971189758_n.png" alt="image 1"></div>
+            <div class="gallery-image"><img src="462551294_474333588259658_5834411896883587946_n.png" alt="image 2"></div>
+            <div class="gallery-image"><img src="462638413_954904106466939_41156605452237786_n.png" alt="image 3"></div>
+            <div class="gallery-image"><img src="462552306_509686348567026_6253663085893925975_n.png" alt="image 4"></div>
+        </center>
+        </div>
+        <div class="available">
+            <h3>Available Furnitures</h3>
+     </div>
+     <div class="thumbnail-gallery">
+        <div class="thumbnail"><a href="item1.html"><img src="462544591_1501631113865760_5103297726534513238_n (1).png" alt="thumbnail 1"></a>
+        <div class="description">Wood Living Room Chair</div>
+        </div>
+        <div class="thumbnail"><a href="item2.html"><img src="462547237_532481459566379_1573078386971189758_n.png" alt="thumbnail 2"></a>
+        <div class="description">Round Wooden Bar Stool</div>
+        </div>
+        <div class="thumbnail"><a href="item3.html"><img src="462543030_1606708446948214_7535974887132418817_n.png" alt="thumbnail 3"></a>
+        <div class="description">Foldable Chair</div>
+        </div>
+        <div class="thumbnail"><a href="item4.html"><img src="462558769_1258662421813517_2603019752949773082_n.png" alt="thumbnail 4"></a>
+            <div class="description">Solid Wood Simple Bar Chair</div>
+            </div>
+        <div class="thumbnail"><a href="item5.html"><img src="462561638_854762126837008_8846040777886928121_n.png" alt="thumbnail 5"></a>
+            <div class="description">Home Fenton Chair</div>
+        </div>
+        <div class="thumbnail"><a href="item6.html"><img src="462551294_474333588259658_5834411896883587946_n.png" alt="thumbnail 6"></a>
+            <div class="description">Seito Wood Table</div>
+        </div>
+        <div class="thumbnail"><a href="item7.html"><img src="462549819_483911294647271_4337061350932032608_n.png" alt="thumbnail 7"></a>
+            <div class="description">Writing Table</div>
+        </div>
+        <div class="thumbnail"><a href="item8.html"><img src="462552329_1586534188629422_3709569562493497617_n.png" alt="thumbnail 8"></a>
+            <div class="description">Casual Dining Table</div>
+        </div>
+        <div class="thumbnail"><a href="item9.html"><img src="okey.png" alt="thumbnail 9"></a>
+            <div class="description">Eira Wooden Table</div>
+        </div>
+        <div class="thumbnail"><a href="item10.html"><img src="462641879_1087509339430250_185384560051278123_n.png" alt="thumbnail 10"></a>
+            <div class="description">Office Table</div>
+        </div>
+        <div class="thumbnail"><a href="item11.html"><img src="russo.png" alt="thumbnail 11"></a>
+            <div class="description">Russo TV Rack</div>
+        </div>
+        <div class="thumbnail"><a href="item12.html"><img src="2.png" alt="thumbnail 12"></a>
+            <div class="description">Aiden TV Rack</div>
+        </div>
+        <div class="thumbnail"><a href="item13.html"><img src="462563251_1237468947491242_1167593255035999673_n.png" alt="thumbnail 13"></a>
+            <div class="description">TV Rack</div>
+        </div>
+        <div class="thumbnail"><a href="item14.html"><img src="3.png" alt="thumbnail 14"></a>
+            <div class="description">Dais TV Rack</div>
+        </div>
+        <div class="thumbnail"><a href="item15.html"><img src="tvrack.png" alt="thumbnail 15"></a>
+            <div class="description">Vax TV Rack</div>
+        </div>
+        <div class="thumbnail"><a href="item16.html"><img src="462549879_1227509225237478_3432376187602030139_n.png" alt="thumbnail 16"></a>
+            <div class="description">Foldable Dining Set</div>
+        </div>
+        <div class="thumbnail"><a href="item17.html"><img src="462554892_577399241479548_4294569037644428633_n.png" alt="thumbnail 17"></a>
+            <div class="description">4 Seater Dining Set</div>
+        </div>
+        <div class="thumbnail"><a href="item18.html"><img src="462560821_1060992565518288_7243727445515167080_n.png" alt="thumbnail 18"></a>
+            <div class="description">4 Seater Dining Room Set</div>
+        </div>
+        <div class="thumbnail"><a href="item19.html"><img src="dining set.png" alt="thumbnail 19"></a>
+            <div class="description">Lisabo Dining Set</div>
+        </div>
+        <div class="thumbnail"><a href="item20.html"><img src="20.png" alt="thumbnail 20"></a>
+            <div class="description">Square Dining Set</div>
+        </div>
+        <div class="thumbnail"><a href="item21.html"><img src="462548323_544213021885381_7202289273327044376_n.png" alt="thumbnail 21"></a>
+            <div class="description">Kitchen Cabinet</div>
+        </div>
+        <div class="thumbnail"><a href="item22.html"><img src="462563207_892191525876041_4835591530184348549_n.png" alt="thumbnail 22"></a>
+            <div class="description">Wardrobe Cabinet</div>
+        </div>
+        <div class="thumbnail"><a href="item23.html"><img src="462581917_1079586736507632_1471763204228718613_n.png" alt="thumbnail 23"></a>
+            <div class="description">Wardrobe Cabinet</div>
+        </div>
+        <div class="thumbnail"><a href="item24.html"><img src="462584474_515938848076086_9187895362203900487_n.png" alt="thumbnail 24"></a>
+            <div class="description">Multipurpose Cabinet</div>
+        </div>
+        <div class="thumbnail"><a href="item25.html"><img src="462638413_954904106466939_41156605452237786_n.png" alt="thumbnail 25"></a>
+            <div class="description">Xevi Cabinet</div>
+        </div>
+        <div class="thumbnail"><a href="item26.html"><img src="36-4-pp-polypropylene-41-15-luxury-swagath-furniture-92-black-original-imahfunub4a3dzb2.png" alt="thumbnail 26"></a>
+            <div class="description">Orlando Queen Bedframe</div>
+        </div>
+        <div class="thumbnail"><a href="item27.html"><img src="462552306_509686348567026_6253663085893925975_n.png" alt="thumbnail 27"></a>
+            <div class="description">Rose Bed</div>
+        </div>
+        <div class="thumbnail"><a href="item28.html"><img src="462643709_1006723421267086_9059174100645706363_n.png" alt="thumbnail 28"></a>
+            <div class="description">Queen Size Bed</div>
+        </div>
+        <div class="thumbnail"><a href="item29.html"><img src="462567862_1093608828844150_2650402318347250869_n.png" alt="thumbnail 29"></a>
+            <div class="description">Wooden Bunk Bed</div>
+        </div>
+        <div class="thumbnail"><a href="item30.html"><img src="462640239_963573739133935_2400511398077172325_n.png" alt="thumbnail 30"></a>
+            <div class="description">Double Deck with Step Drawers</div> 
+        </div>
+</body>
+</html>

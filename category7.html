@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family:arial,Helvetica,sans-serif;
+            padding: 0;
+            background-color:#E3DFDE;
+            margin-bottom:100px;
+        }
+        .header {
+            background-color:#E3DFDE;
+            color: #070707;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #BFAA9D;
+        }
+        .nav a {
+            position: relative;
+            display: flex;
+            color: black;
+            padding: 20px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav a:hover {
+            background-color: #AC9362;
+            color: white;
+            transform: scale(1.1);
+        }
+        .main {
+            padding: 20px;
+            text-align: center; 
+        }
+    
+    
+        .gallery {
+            perspective: 1000px;
+        }
+    
+        .gallery-container {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotate 20s infinite linear;
+            gap: 10px;
+            padding:30px;
+        }
+    
+        .gallery-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            
+        }
+    
+        .gallery-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        .thumbnail-gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            row-gap: 30px;
+            column-gap: 5px;
+            margin-top: 100px;
+            margin: 100px 0px 100px 100px;
+        }
+    
+        .thumbnail {
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            width: 200px;
+            height: 205px;
+            position: relative;
+        }
+    
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    
+        .thumbnail:hover {
+            transform: scale(1.1);
+        }
+    
+        .description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            font-family: arial,Helvetica,sans-serif;
+            font-size: 15px;
+            padding: 1px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+    
+        .thumbnail:hover .description {
+            opacity: 1;
+        }
+        .available{
+            margin: 0px 0px 0px 30px;
+            }
+    
+        .available h4{
+            color: #412A1A;
+            letter-spacing: 4px;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="header">
+                <img src="flogooooooo-removebg-preview.png" height="100px" width="100px">
+            </div>
+            <div class="nav">
+                <a href="homeeeeeeee.html">Home</a>
+                <a href="finalna.html">Product</a>
+                <a href="category.html">Category</a>
+                <a href="">About</a>
+            </div>
+            <div class="available">
+                <h3><center>Kitchen Cabinet</center></h3>
+       <center> <div class="thumbnail-gallery">
+        <div class="thumbnail"><a href="item24.html"><img src="462584474_515938848076086_9187895362203900487_n.png" alt="thumbnail 24"></a>
+            <div class="description">Multipurpose Cabinet</div>
+        </div>
+        <div class="thumbnail"><a href="item21.html"><img src="462548323_544213021885381_7202289273327044376_n.png" alt="thumbnail 21"></a>
+            <div class="description">Kitchen Cabinet</div>
+        </div>
+        <div class="thumbnail"><a href="item25.html"><img src="462638413_954904106466939_41156605452237786_n.png" alt="thumbnail 25"></a>
+            <div class="description">Xevi Cabinet</div>
+        </div>
+        </div>
+    </center>
+</body>
+</html>
